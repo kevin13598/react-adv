@@ -1,6 +1,5 @@
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   NavLink
 } from 'react-router-dom';
@@ -28,7 +27,7 @@ export const Navigation = () => {
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
+        <Router>
           <Route path="/about">
             <h1>About</h1>
           </Route>
@@ -38,7 +37,7 @@ export const Navigation = () => {
           <Route path="/">
             <h1>Home</h1>
           </Route>
-        </Switch>
+        </Router>
       </div>
     </Router>
   );
